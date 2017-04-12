@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="16dp"
+    android:paddingStart="0dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/placeholder"
+        tools:src="@mipmap/test" />
+
+    <TextView
+        android:id="@+id/date_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/thumbnail"
+        android:layout_toRightOf="@id/thumbnail"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:paddingTop="4dp"
+        android:textColor="@color/textColorDate"
+        android:textSize="12sp"
+        tools:text="Jan 15, 2017 - Politics" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_section"
+        android:layout_toEndOf="@id/thumbnail"
+        android:layout_toRightOf="@id/thumbnail"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/textColorWebTitle"
+        android:textSize="16sp"
+        tools:text="Alex Salmond speech – first minister hits back over Scottish independence – live" />
+
+</RelativeLayout>
